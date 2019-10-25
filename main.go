@@ -1,12 +1,8 @@
 package main
 
-import (
-	"github.com/astaxie/beego"
-	_ "github.com/stevenkitter/tumbleweed-api/routers"
-
-)
+import "github.com/stevenkitter/tumbleweed-api/weed"
 
 func main() {
-	beego.Run()
+	srv := weed.Server{}
+	srv.Run()
 }
-
